@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-color">
-  <a class="navbar-brand" routerLink="home"><img src="https://baptistelagisquet.fr/images/javascript-js-logo-2949701702-seeklogo.com.png" class="img-style" /></a>
+ <!-- <a class="navbar-brand" routerLink="home"><img src="" class="img-style" /></a> -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -8,8 +8,8 @@
       <a class="nav-item nav-link" routerLinkActive="active" routerLink="home">Home</a>
       <a class="nav-item nav-link" routerLinkActive="active" routerLink="cv">CV</a>
       <a class="nav-item nav-link" routerLinkActive="active" routerLink="compétences">Compétences</a>
+      <p class="date-style">{{ hour | date: 'EEEE'+' '+'dd'+' '+'MM'+' '+'yyyy' }}</p>
     </div>
   </div>
 </nav>
-
 <router-outlet></router-outlet>

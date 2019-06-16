@@ -12,7 +12,6 @@
 
 #resume {
   background: #fff;
-  padding-top: 90px;
   padding-bottom: 72px;
   overflow: hidden;
 }
@@ -22,8 +21,16 @@
   padding-bottom: 6px;
 }
 
+#formation {
+  width: 10rem;
+}
+
+#experiences {
+  width: 11.5rem;
+}
+
 .header-col {
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 
 #resume .main-col {
@@ -32,7 +39,6 @@
 }
 
 #resume .info {
-  font: 16px/24px 'librebaskerville-italic', serif;
   color: #6E7881;
   margin-bottom: 18px;
   margin-top: 9px;
