@@ -1,0 +1,29 @@
+
+.row {
+  width: 96%;
+  max-width: 1020px;
+  margin: 0 auto;
+  margin-top: 5rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.columns {
+  position: relative;
+  padding: 0 20px;
+  min-height: 1px;
+  float: left;
+}
+
+.row .nine {
+  width: 75%;
+}
+
+
+.header-col {
+  border-bottom: 3px solid #F7E037;
+  padding-bottom: 6px;
+}
+
+.main-col {
+  margin-top: 2rem;
+}
