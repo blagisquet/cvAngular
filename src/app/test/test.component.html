@@ -1,9 +1,15 @@
+<h2 class="title-beer">Affichage d'une api</h2>
+<button class="btn btn-primary btn-lg" id="button" (click)="onFetch()">Voir les bières</button>
 <div class="container">
   <div class="row">
-    <h2>Affichage d'une api</h2>
-    <ul class="list-group">
-      <li *ngFor="let beer of beers">{{ beers.name }}</li>
-    </ul>
-    <button class="btn btn-primary" (click)="onFetch()">Voir les bières</button>
+    <div class="card" *ngFor="let beer of beers; let i = index;" style="width: 18rem;">
+      <img src="{{ beers[i].image_url }}" class="card-img-top beer-style" alt="beer">
+      <div class="card-body">
+        <h5 class="card-title">{{ beers[i].name }}</h5>
+        <p class="card-text">{{ beers[i].tagline }}</p>
+        <p class="card-text">{{ beers[i].ibu }} IBU / {{beers[i].abv }}%</p>
+      </div>
+    </div>
   </div>
 </div>
+

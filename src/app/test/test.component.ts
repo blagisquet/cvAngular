@@ -10,17 +10,15 @@ import { Observable } from 'rxjs';
 
 @Injectable()
 export class TestComponent implements OnInit {
-
+  beers = [];
   onFetch() {
     this.getBrewdogBeers();
   }
 
   constructor(private httpClient: HttpClient) { }
   getBrewdogBeers() {
-    const beers = [];
     this.httpClient
-      .get<any[]>('https://api.punkapi.com/v2/beers',
-      this.beers)
+      .get<any[]>('https://api.punkapi.com/v2/beers')
       .subscribe(
         (response) => {
           console.log(response);
