@@ -1,4 +1,4 @@
-<h2 class="title-beer">Affichage d'une api</h2>
+<h2 class="title-beer">Affichage d'une Api</h2>
 <button class="btn btn-primary btn-lg" id="button" (click)="onFetch()">Voir les bières</button>
 <div class="container">
   <div class="row">
@@ -8,6 +8,7 @@
         <h5 class="card-title">{{ beers[i].name }}</h5>
         <p class="card-text">{{ beers[i].tagline }}</p>
         <p class="card-text">{{ beers[i].ibu }} IBU / {{beers[i].abv }}%</p>
+        <button class="btn btn-danger btn-sm" (click)="onDelete(i)">Supprimer</button>
       </div>
     </div>
   </div>

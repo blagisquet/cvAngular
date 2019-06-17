@@ -1,6 +1,5 @@
 import { Component, OnInit, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-test',
@@ -13,6 +12,10 @@ export class TestComponent implements OnInit {
   beers = [];
   onFetch() {
     this.getBrewdogBeers();
+  }
+
+  onDelete(i) {
+    this.beers.splice(i, 1);
   }
 
   constructor(private httpClient: HttpClient) { }
