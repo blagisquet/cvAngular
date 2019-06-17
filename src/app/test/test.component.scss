@@ -1,7 +1,9 @@
 .beer-style {
   max-width: 2rem;
   max-height: 8rem;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
 }
 
 ul li{
@@ -21,7 +23,7 @@ ul {
 }
 
 #button {
-  margin: 2rem auto 3rem 46%;
+  margin: 1rem auto 3rem 46%;
 }  
 
 .title-beer {
@@ -33,5 +35,5 @@ ul {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2rem;
-  height: 20rem;
+  height: 23rem;
 }

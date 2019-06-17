@@ -17,14 +17,15 @@ const appRoutes: Routes = [
   {path: 'cv', component: CvComponent },
   {path: 'compétences', component: CompetencesComponent },
   {path: 'test', component: TestComponent }
-]
+];
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CvComponent,
     CompetencesComponent,
-    TestComponent
+    TestComponent,
   ],
   imports: [
     BrowserModule,
