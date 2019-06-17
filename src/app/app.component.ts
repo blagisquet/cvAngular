@@ -12,5 +12,4 @@ export class AppComponent {
   hour = new Date();
   constructor() { }
 
- 
 }

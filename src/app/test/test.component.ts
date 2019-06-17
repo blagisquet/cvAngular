@@ -24,7 +24,6 @@ export class TestComponent implements OnInit {
       .get<any[]>('https://api.punkapi.com/v2/beers')
       .subscribe(
         (response) => {
-          console.log(response);
           this.beers = response;
         },
         (error) => {
